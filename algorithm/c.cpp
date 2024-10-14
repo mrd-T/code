@@ -29,7 +29,7 @@ int main(){
 	while(rbound-lbound>1e-6){
 		double mid=(lbound+rbound)/2;
 		if(check(mid)){
-			lbound=mid;
+			lbound=mid+++;
 			
 		}else{
 			rbound=mid;
